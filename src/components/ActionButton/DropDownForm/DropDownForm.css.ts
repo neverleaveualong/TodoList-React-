@@ -22,7 +22,7 @@ export const listForm = style({
 });
 
 export const input = style({
-  padding: vars.spacing.medium, // 내부 여백
+  padding: vars.spacing.medium,
   fontSize: vars.fontSizing.P1, // 글자 크기
   minHeight: 60, // 최소 높이
   marginBottom: vars.spacing.medium, // 아래쪽 마진

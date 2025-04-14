@@ -61,7 +61,7 @@ export const updateButton = style({
   border: "none",
   borderRadius: 5,
   fontSize: vars.fontSizing.T4,
-  padding: vars.spacing.T4,
+  padding: vars.spacing.big2,
   marginRight: vars.spacing.big1,
   backgroundColor: vars.color.updateButton,
   cursor: "pointer",

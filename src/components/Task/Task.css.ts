@@ -22,5 +22,5 @@ export const title = style({
   marginBottom: vars.spacing.small,
 });
 export const description = style({
-  fontSize: vars.fontSizing.T5,
+  fontSize: vars.fontSizing.P1,
 });

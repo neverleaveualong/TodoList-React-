@@ -1,6 +1,5 @@
-import React, { ChangeEvent, FC, useRef, useState } from "react";
+import React, { ChangeEvent, FC, useState } from "react";
 import { FiCheck } from "react-icons/fi";
-import { Dispatch } from "redux";
 import { sideForm } from "./SideForm.css";
 import { input, icon } from "./SideForm.css";
 import { useTypedDispatch } from "../../../hooks/redux";
@@ -9,10 +8,10 @@ import { v4 as uuidv4 } from "uuid";
 import { addLog } from "../../../store/slices/loggerSlice";
 
 type TSideFormProp = {
-  inputRef: React.RefObject<HTMLInputElement>;
+  inputRef: React.RefObject<HTMLInputElement | null>;
   setIsFormOpen: React.Dispatch<React.SetStateAction<boolean>>;
 };
-const SideForm: FC<TSideFormProp> = ({ setIsFormOpen, inputRef }) => {
+const SideForm: FC<TSideFormProp> = ({ setIsFormOpen }) => {
   const [inputText, setInputText] = useState("");
   const dispatch = useTypedDispatch();
 

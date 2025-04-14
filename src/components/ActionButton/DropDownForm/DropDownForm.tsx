@@ -1,4 +1,4 @@
-import React, { ChangeEvent, useState } from "react";
+import React, { ChangeEvent, FC, useState } from "react";
 import { FiX } from "react-icons/fi";
 import { useTypedDispatch } from "../../../hooks/redux";
 import { addList, addTask } from "../../../store/slices/boardsSlice";
@@ -87,7 +87,7 @@ const DropDownForm: FC<TDropFormProps> = ({
         className={input}
         value={text}
         onChange={handleTextChange}
-        autoFocus={true}
+        autoFocus
         placeholder={formPlaceHolder}
         onBlur={() => setIsFormOpen(false)}
       />

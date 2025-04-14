@@ -1,7 +1,7 @@
-import { FC, React } from "react";
+import { FC } from "react";
 import { GrSubtract } from "react-icons/gr";
 import ActionButton from "../ActionButton/ActionButton";
-import { IList } from "../../types";
+import { IList, ITask } from "../../types";
 import Task from "../Task/Task";
 import { useTypedDispatch } from "../../hooks/redux";
 import { v4 } from "uuid";
@@ -33,7 +33,7 @@ const List: FC<TListProps> = ({ list, boardId }) => {
   const handleTaskChange = (
     boardId: string,
     listId: string,
-    taskId: string,
+    _taskId: string,
     task: ITask
   ) => {
     dispatch(setModalData({ boardId, listId, task }));

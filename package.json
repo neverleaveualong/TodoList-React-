@@ -10,6 +10,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@firebasegen/default-connector": "file:dataconnect-generated/js/default-connector",
     "@reduxjs/toolkit": "^2.6.1",
     "@vanilla-extract/css-utils": "^0.1.4",
     "clsx": "^2.1.1",

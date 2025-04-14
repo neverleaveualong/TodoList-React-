@@ -1,4 +1,5 @@
-import { React, FC } from "react";
+import { FC } from "react";
+import React from "react";
 import { useTypedSelector } from "../../hooks/redux";
 import { FiX } from "react-icons/fi";
 import LogItem from "./LogItem/LogItem";
@@ -27,7 +28,7 @@ const LoggerModal: FC<TLoggerModalProps> = ({ setIsLoggerOepn }) => {
         </div>
 
         <div className={body}>
-          {logs.map((log, index) => (
+          {logs.map((log) => (
             <LogItem key={log.logId} logItem={log} />
           ))}
         </div>
